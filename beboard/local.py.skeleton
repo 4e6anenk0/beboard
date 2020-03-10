@@ -1,0 +1,15 @@
+# Database connections, passwords and private keys should be stored in this file
+
+# With this import you can choose between development and production
+from beboard.settings.development import *
+
+SECRET_KEY = '...'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': '...',
+        'USER': '...',
+        'PASSWORD': '...',
+    }
+}
