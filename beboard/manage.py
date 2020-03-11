@@ -8,7 +8,7 @@ from beboard.settings.base import BASE_DIR
 def main():
     if os.path.isfile(os.path.join(os.path.sep, BASE_DIR, 'beboard', 'settings', 'local.py')):
         # If file local.py exists in the settings directory:
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "local")
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "beboard.settings.local")
     else:
         # If not, use the default settings without secrets:
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "beboard.settings.development")
