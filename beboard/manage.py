@@ -10,7 +10,7 @@ def main():
         # If file local.py exists in the settings directory:
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "beboard.settings.local")
     else:
-        # If not, use the default settings without secrets:
+        # If not, use the default settings without secret data:
         os.environ.setdefault("DJANGO_SETTINGS_MODULE", "beboard.settings.development")
 
     try:
